@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/genre_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/genre_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:buttonTint="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/genre_name"
+        style="@style/textText2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:text="test"/>
+
+</LinearLayout>

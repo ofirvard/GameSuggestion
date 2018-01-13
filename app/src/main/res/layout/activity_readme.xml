@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/readme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.example.ofir.gamesuggestion.Readme">
+
+    <TextView
+        style="@style/textText1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/readme"
+        android:textSize="30sp"/>
+
+    <TextView
+        style="@style/textText1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_margin="20sp"
+        android:layout_weight="7"
+        android:text="@string/readme_desc"
+        android:textSize="20sp"/>
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_margin="20sp"
+        android:layout_weight="1"
+        android:onClick="back"
+        android:text="@string/back"/>
+</LinearLayout>

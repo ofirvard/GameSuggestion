@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/menu_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.example.ofir.gamesuggestion.Menu">
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="userPanel"
+        android:text="@string/user_panel"/>
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="showMap"
+        android:text="@string/map"/>
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="readme"
+        android:text="@string/readme"/>
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="choosesGenre"
+        android:text="@string/chooses_genre"/>
+
+    <Button
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="showGames"
+        android:text="@string/game"/>
+
+    <Button
+        android:id="@+id/show_all_users"
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="showAllUsers"
+        android:text="@string/show_all_users"/>
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:onClick="logout"
+        android:text="@string/logout"/>
+</LinearLayout>

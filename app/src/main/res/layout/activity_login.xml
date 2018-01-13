@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/login_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.example.ofir.gamesuggestion.Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_margin="10sp"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/title"/>
+
+    <TextView
+        android:id="@+id/version"
+        style="@style/textText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="TextView"/>
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:hint="@string/username"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_weight="1"
+        android:textColor="#ff0000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2">
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_margin="15sp"
+            android:layout_weight="1"
+            android:onClick="signUp"
+            android:text="@string/sign_up"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:id="@+id/sign_in"
+            android:layout_height="match_parent"
+            android:layout_margin="15sp"
+            android:layout_weight="1"
+            android:onClick="signIn"
+            android:text="@string/sign_in"/>
+    </LinearLayout>
+
+</LinearLayout>

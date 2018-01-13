@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/edit_user"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.example.ofir.gamesuggestion.EditUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/picture"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/picture"
+            android:onClick="pickPicture"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updatePicture"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/editText2"
+
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="2"
+            android:hint="@string/password"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updatePassword"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/first_name"
+            style="@style/editText2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="2"
+            android:hint="@string/first_name"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updateFirstName"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/last_name"
+            style="@style/editText2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="2"
+            android:hint="@string/last_name"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updateLastName"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/street"
+            style="@style/editText2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="2"
+            android:hint="@string/street"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updateStreet"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/editText2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="2"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            style="@style/button1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="updateEmail"
+            android:text="@string/change"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="0.7"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:textColor="#ff0000"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="1"
+        android:onClick="done"
+        android:text="@string/done"/>
+</LinearLayout>
